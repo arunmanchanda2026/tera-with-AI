@@ -53,6 +53,7 @@ jobs:
         run: $PYTHON_BIN ai/ai_review.py > ai-report.txt
 
       - name: Show AI Report
+        run: cat ai-report.txt
       
       - name: Send Slack Report
         env:
